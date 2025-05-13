@@ -1,4 +1,4 @@
-function CadEquipamento() {
+function TelaCadastroUsuario() {
   return (
     <div style={{
       margin: 0,
@@ -22,29 +22,39 @@ function CadEquipamento() {
           marginTop: 0,
           color: '#2e8b57',
           textAlign: 'center'
-        }}>Cadastro de Equipamento</h2>
+        }}>Cadastro de Usuário</h2>
 
-        {/* Nome do equipamento */}
+        {/* Nome de usuário */}
         <div style={{ marginBottom: '20px' }}>
-          <label style={labelStyle}>Nome do Equipamento</label>
+          <label style={labelStyle}>Nome de Usuário</label>
           <input
             type="text"
-            placeholder="Ex: Projetor, Notebook..."
+            placeholder="Digite seu nome"
             style={inputStyle}
           />
         </div>
 
-        {/* Número do equipamento */}
+        {/* Senha */}
         <div style={{ marginBottom: '20px' }}>
-          <label style={labelStyle}>Número do Equipamento</label>
+          <label style={labelStyle}>Senha</label>
           <input
-            type="text"
-            placeholder="Ex: 001, 002..."
+            type="password"
+            placeholder="Crie uma senha"
             style={inputStyle}
           />
         </div>
 
-        {/* Botão */}
+        {/* Confirmar senha */}
+        <div style={{ marginBottom: '20px' }}>
+          <label style={labelStyle}>Confirmar Senha</label>
+          <input
+            type="password"
+            placeholder="Repita a senha"
+            style={inputStyle}
+          />
+        </div>
+
+        {/* Botão de cadastrar */}
         <button style={{
           width: '100%',
           padding: '10px',
@@ -55,7 +65,7 @@ function CadEquipamento() {
           fontWeight: 'bold',
           cursor: 'pointer'
         }}>
-          Cadastrar Equipamento
+          Cadastrar
         </button>
       </div>
     </div>
@@ -77,4 +87,4 @@ const inputStyle = {
   borderRadius: '6px'
 };
 
-export default CadEquipamento;
+export default TelaCadastroUsuario;

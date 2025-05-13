@@ -1,9 +1,9 @@
 import { useState } from 'react'
 import './App.css'
-import CadEquipamento from './components/CadEquipamento'
+import TelaCadastroUsuario from './components/TelaCadastroUsuario'
 import ReaAgendamento from  './components/ReaAgendamento'
-import CadAulas from  './components/CadAulas'
-import CadTurmas from  './components/CadTurmas'
+import TelaLogin from  './components/TelaLogin'
+import TelaEsqueciSenha from  './components/TelaEsqueciSenha'
 import CancelAg from './components/CancelAg'
 import ExcReserva from './components/ExcReserva'
 import Dashboard from './components/dashboard'
@@ -16,10 +16,10 @@ function App() {
 
   return (
    <>
-   <CadEquipamento/>,
+   <TelaCadastroUsuario/>,
    <ReaAgendamento/>
-   <CadAulas/>
-   <CadTurmas/>
+   <TelaLogin/>
+   <TelaEsqueciSenha/>
    <CancelAg/>
    <ExcReserva/>
    <dashboard/>

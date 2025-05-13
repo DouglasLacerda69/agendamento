@@ -1,4 +1,4 @@
-function CadAulas() {
+function TelaEsqueciSenha() {
   return (
     <div style={{
       margin: 0,
@@ -22,39 +22,29 @@ function CadAulas() {
           marginTop: 0,
           color: '#2e8b57',
           textAlign: 'center'
-        }}>Cadastro de Aula</h2>
+        }}>Recuperar Senha</h2>
 
-        {/* Nome da aula ou disciplina */}
+        {/* Nome de usuário */}
         <div style={{ marginBottom: '20px' }}>
-          <label style={labelStyle}>Nome da Aula</label>
+          <label style={labelStyle}>Nome de Usuário</label>
           <input
             type="text"
-            placeholder="Ex: Matemática, História..."
+            placeholder="Digite seu nome de usuário"
             style={inputStyle}
           />
         </div>
 
-        {/* Professor responsável */}
-        <div style={{ marginBottom: '20px' }}>
-          <label style={labelStyle}>Professor</label>
-          <input
-            type="text"
-            placeholder="Nome do professor"
-            style={inputStyle}
-          />
-        </div>
+        {/* Mensagem de instrução */}
+        <p style={{
+          fontSize: '0.95em',
+          color: '#333',
+          marginBottom: '20px',
+          textAlign: 'center'
+        }}>
+          Sua solicitação será enviada ao administrador. Em breve, ele irá alterar sua senha e informá-la a você.
+        </p>
 
-        {/* Número da aula (1 a 9) */}
-        <div style={{ marginBottom: '20px' }}>
-          <label style={labelStyle}>Número da Aula</label>
-          <select style={inputStyle}>
-            <option value="">Selecione</option>
-            {[...Array(9)].map((_, i) => (
-              <option key={i} value={i + 1}>{`${i + 1}ª aula`}</option>
-            ))}
-          </select>
-        </div>
-
+        {/* Botão para enviar solicitação */}
         <button style={{
           width: '100%',
           padding: '10px',
@@ -65,14 +55,14 @@ function CadAulas() {
           fontWeight: 'bold',
           cursor: 'pointer'
         }}>
-          Cadastrar Aula
+          Solicitar Nova Senha
         </button>
       </div>
     </div>
   );
 }
 
-// Estilos reaproveitados
+// Estilos reutilizáveis
 const labelStyle = {
   display: 'block',
   marginBottom: '6px',
@@ -87,5 +77,7 @@ const inputStyle = {
   borderRadius: '6px'
 };
 
-export default CadAulas;
+export default TelaEsqueciSenha;
+
+
   
